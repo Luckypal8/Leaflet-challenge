@@ -2,9 +2,9 @@
 var queryURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 
-// establish a get request
+// Perform a GET request to the query URL
 d3.json(queryURL).then(function(data){
-    // with e response, send the data.features and data.features object to the createFeatures function.
+    // Once e get a response, send the data.features and data.features object to the createFeatures function.
     createFeatures(data.features);
   });
     
